@@ -1,33 +1,84 @@
 
 body {
     font-family: 'Oswald', sans-serif;
+    margin: 0;
+}
+
+p {
+  font-weight: 300;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+.center-text {
+  text-align: center;
+}
+
+.title {
+  font-weight: 300;
+  font-size: 42px;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 30px;
 }
 
 .wrapper {
 	display: flex;
 	flex-direction: row-reverse;
+  align-items: 'stretch';
+  min-height: 100vh;
 }
 
 
 .main {
 	width: 100%;
-	background-color: #ffff66;
+
 }
 
-.main-nav {
+#introducao {
+  background-attachment: fixed,  fixed,  fixed;
+  background-image: url(img/granulado.png), url(img/fundo.svg), -webkit-linear-gradient(bottom left, #1C3144, #4361c2);
+  background-image: url(img/granulado.png), url(img/fundo.svg), -o-linear-gradient(bottom left, #1C3144, #4361c2);
+  background-image: url(img/granulado.png), url(img/fundo.svg), linear-gradient(to top right, #1C3144, #4361c2);
+  background-position: top left,	center center,	center center;
+  background-size: auto,	cover,	cover;
+  overflow: hidden;
+  color: #ededed;
+  padding: 40px 0;
+}
+
+.main-navbar {
 	width: 350px;
-	height: 100vh;
+  -webkit-box-shadow: -3px 0px 18px -1px rgba(0,0,0,0.45);
+  -moz-box-shadow: -3px 0px 18px -1px rgba(0,0,0,0.45);
+  box-shadow: -3px 0px 18px -1px rgba(0,0,0,0.45);
+
 }
 
-.main-nav ul {
+.main-navbar ul {
 	list-style: none;
+  padding: 0;
+
 }
 
-.main-nav a {
+.main-navbar ul li {
+  border-bottom: 1px solid #d8d8d8;
+  padding: 15px 0;
+}
+
+.main-navbar a {
 	text-decoration: none;
-	color: red;
+	color: black;
 }
-
+.inner {
+  padding: 27px;
+}
 .titulo {
 	text-align: center;
 }
@@ -36,3 +87,12 @@ body {
 	color: #ffbf00;
 }
 
+.main-menu {
+  margin-top: 120px;
+}
+.menu-section-title h2 {
+  border-bottom: solid 3px #f56a6a;
+  display: inline-block;
+  margin: 0;
+  padding: 0 0.75em 0.5em 0;
+}
