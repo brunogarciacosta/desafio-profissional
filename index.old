@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Desafio Profiossional</title>
+</head>
+<body>
+
+<div class="wrapper">
+	<main class=main>
+		<section id="introducao">
+			<div class="container">
+				<header>
+					<h1 class="title">Desafio Profissional</h1>
+					<h2 class="subtitle">Tecnologia em Análise e Desenvolvimento de Sistemas</h2>
+				</header>
+				<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quod, fugit, minima molestias voluptate, ratione accusantium cumque eaque et fugiat atque impedit neque laudantium eligendi facere molestiae, totam est quasi officia a quaerat quidem commodi deserunt! Ut, nostrum. Deserunt quam atque ratione debitis magnam repellendus, minima impedit accusantium repudiandae non repellat molestiae pariatur, cupiditate! Perspiciatis nihil non optio numquam qui adipisci dolorum laboriosam, eos, obcaecati voluptatem provident vitae earum accusamus ex architecto perferendis saepe eius facilis, voluptate repellendus rerum magnam. Officiis similique nam excepturi beatae ex expedita, ullam accusamus qui mollitia? Deleniti vero inventore saepe quaerat, sit quod vitae accusantium suscipit! Distinctio laboriosam odio id aperiam numquam, ab eos nobis!</p>
+			</div>
+		</section>
+		<section id="grupo">
+			<div class="container">
+				<header>
+					<h1 class="title">Grupo</h1>
+				</header>
+				<div class="grid">
+					<div class="col group-member">
+						<div class="avatar-container">
+							<img src="assets/img/isaque.jpg" alt="Foto do Isaque">
+						</div>
+						<h2>Isaque Ramos da Silva</h2>
+						<p>RA:2279636581</p>
+					</div>
+					<div class="col group-member">
+						<div class="avatar-container">
+							<img src="assets/img/bruno.jpg" alt="Foto do Isaque">
+						</div>
+						<h2>Bruno Garcia Costa</h2>
+						<p>RA:6037557847</p>
+					</div>
+					<div class="col group-member">
+						<div class="avatar-container">
+							<img src="assets/img/isaque.jpg" alt="Foto do Isaque">
+						</div>
+						<h2>Wellington Fernandes</h2>
+						<p>RA:1906599362</p>
+					</div>
+					<div class="col group-member">
+						<div class="avatar-container">
+							<img src="assets/img/nayanne.jpg" alt="Foto do Isaque">
+						</div>
+						<h2>Nayanne Rodrigues</h2>
+						<p>RA:6009367488</p>
+					</div>
+					<div class="col group-member">
+						<div class="avatar-container">
+							<img src="assets/img/isaque.jpg" alt="Foto do Isaque">
+						</div>
+						<h2>Isaque Ramos da Silva</h2>
+						<p>RA:2279636581</p>
+					</div>
+				</div>
+			</div>
+		</section></main>
+	<aside class="main-navbar" >
+		<div class="inner">
+				<header>
+					<h1 class="logo-navbar">DESAFIO<span>PROFISSIONAL</span></h1>
+				</header>
+
+				<section class="main-menu">
+					<header class="menu-section-title">
+						<h2>Menu</h2>
+					</header>
+					<nav>
+						<ul>
+							<li><a href="">Home</a></li>
+							<li><a href="">Ferramentas para Sistemas Web</a></li>
+							<li><a href="sistemas_operacionais.html">Sistemas Operacionais</a></li>
+							<li><a href="">Organização De Computadores</a></li>
+							<li><a href="">DPP</a></li>
+							<li><a href="">Probabilidade e Estatistica</a></li>
+						</ul>
+				  </nav>
+				</section>
+		</div>
+	</aside>
+
+</div>
+
+</body>
+</html>
