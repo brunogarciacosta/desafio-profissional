@@ -1,2 +1,69 @@
+extends templates/_template
 
+block page-navigation
+	ul
+		+link-menu('org_de_comp.html', 'Organização de Computadores')
+		+link-menu('org_de_comp.html', 'Organização de Computadores')
+		+link-menu('org_de_comp.html', 'Organização de Computadores')
+
+block content
+	section#introducao
+		.container
+			header
+				h1.title Resumo: Sistemas Operacionais
+	article.main-article
+		.container
+			section#conceitos-basicos
+				h2.title Conceitos básicos e tipos de Sistemas Operacionais
+				p  O sistema operacional é um provedor de abstrações e coordenador de recursos, torna a operação da máquina mais simples e intuitiva. A principal finalidade é abstrair do usuário a complexidade de comandos por meio de uma interface amigável.
+				p  Sistemas operacionais agem como "meio termo" entre o usuário e o hardware, a grande vantagem é que essa abstração permite utilizar diversos tipos de hardware com o mesmo sistema operacional, uma vez que ele se adapta a diversos hardwares.
+				p  Os usuários utilizam o sistema operacional para acessar todos seus periféricos. Podemos ter também programas que utilizarão o sistema operacional para acessar algum recurso e os programadores que escrevem programas que são executados e controlados pelo sistema operacional.
+			section#tipos-de-sistema
+				h.title Tipos de sistemas Operacionais
+				p Existem três tipos de sistemas operacionais: Monotarefas, Multitarefas e Múltiplos Processadores
+				ul
+					li 
+						p <strong>Sistemas monotarefas ou monoprogramáveis</strong> executam apenas um único programa por vez; outras aplicações devem aguardar o término do programa em execução. Típicos das décadas de 1960 e 1970, eram conhecidos por permitir a dedicação do processador memória e periféricos exclusivamente a um único programa.
+					li
+						p Nos <strong>sistemas multitarefas</strong>, os recursos são compartilhados entre os usuários e as diversas aplicações. Enquanto um sistema aguarda acesso ao disco, outro pode utilizar o processador ou outro periférico, e todo o sistema é baseado nessa lógica de esperar, utilizar e liberar. Com essa possibilidade de compartilhamento de recursos, o tempo total de execução das aplicações é reduzido, assim como o custo total do equipamento.
+					li
+						p <strong>Sistemas com multiplos processadores</strong> são caracterizados por operar com duas ou mais unidades de processamento interligadas e de forma cooperada. O conceito é permitir que vários programas sejam executados ao mesmo tempo. As vantagens desse tipo de sistema são:
+							ul
+								li Escalabilidade – capacidade de ampliar a capacidade de processamento por meio de aumento da quantidade de processados. 
+								li Disponibilidade – capacidade de manter o sistema operando em casos de falha. 
+								li Balanceamento de Carga – possibilidade de distribuir o processamento entre os diversos processadores.
+			section#gerencia-do-processador
+				h.title Gerencia do Processador e de Processos
+				p Todos os softwares que podem executar em um computador – inclusive, algumas vezes, o próprio sistema operacional –, são organizados em vários processos sequenciais.
+				p <strong>Um processo é um programa em execução acompanhado dos valores atuais do contador de programas, dos registradores e das variáveis.</strong> Conceitualmente, cada processo tem sua CPU virtual. Na verdade, a CPU troca a todo instante de um processo para outro; esse mecanismo de trocas rápidas é chamado de multiprogramação ou multiprocessamento. Com a alternância da CPU entre processos, a taxa na qual o processo realiza sua computação não será uniforme e provavelmente não será possível repetir os mesmos tempos de execução se executarmos os processos novamente.
+				p Com o surgimento dos sistemas multiprogramáveis, em que vários processos são executados simultaneamente, a gerência do uso da capacidade processador tornou-se uma das atividades prioritárias em um sistema operacional. A partir do momento em que vários processos estão em estado de pronto, precisamos estabelecer regras para que eles sejam executados pelo processador. Essas regras são conhecidas como política de escalonamento. De forma direta, podemos afirmar que escalonamento de processos é como os processos são distribuídos para execução nos processadores. Um ou mais processos podem ter acesso aos chamados recursos compartilhados, que são recursos comuns a todos os processos, como perifericos e memorias. 
+				p Os principais critérios que devem ser considerados para a política de escalonamento:
+					ol
+						li
+							p <strong>Utilização do Processador</strong> – a meta é que o processador passe a maior parte do tempo ocupado. Utilização em torno de 30% do tempo total de processamento é uma carga de processamento baixa; utilização em torno de 90% é considerada alta, próxima à capacidade máxima.
+						li
+							p <strong>Throughput</strong> – número de processos executados simultaneamente em um período de tempo determinado. Quanto maior esse número melhor. 
+						li
+							p <strong>Tempo de Processador</strong> – é o tempo de execução de um processo. O escalonamento não altera o tempo de processamento de um processo, pois esse tempo é em função da quantidade x complexidade de instruções da aplicação. 
+						li
+							p <strong>Tempo de Espera</strong> – é o tempo total que um processo aguarda na fila de processos prontos para ser executado. Tempo de Turnaround – é o tempo total que um processo leva desde a entrada na fila de pronto até encerrar, considerando o tempo de espera para ser executado. 
+						li
+							p Tempo de Resposta – é o tempo entre uma solicitação ao sistema e o momento de resposta à solicitação. Esse tempo normalmente não é limitado pela capacidade de processamento pela velocidade dos dispositivos de E/S (modem, impressoras, scanners, DVD etc). 
+				p Desta forma, e usando de técnicas para sincronização dos processos (como Operações Atômicas, Exclusão Mútua e Seção Crítica) pode-se garantir a execução segura e mutua de processos, mesmo que esses concorram recursos compartilhados.
+			section#sistema-de-arquivos
+				h2.title Sistemas de Arquivos
+				p A busca e a recuperação de informações são atividades fundamentais de um sistema de arquivo. Programas devem ser capazes de manipular grandes quantidades de dados em dispositivos temporários e permanentes. É por meio da implementação da estrutura de gestão de arquivos que o Sistema Operacional organiza essas informações. O sistema de arquivos é responsável pelo controle de todas as operações relacionadas a arquivos. De acordo com Deitel, um sistema de arquivos deve possuir:
+					ol
+						li
+							p <strong>Método de acesso: </strong>forma como os dados serão extraídos dos arquivos. 
+						li
+							p <strong>Gerenciamento de arquivos:</strong> mecanismos e método de armazenamento, compartilhamento e segurança. 
+						li
+							p <strong>Mecanismos de integridade: </strong>processos que asseguraram que os dados de um arquivo estão íntegros.
+
+					
+						
+					
+			
+		
   

@@ -1,5 +1,13 @@
 extends templates/_template
 block content
+	
+	mixin group-member(imgsrc, nome, ra)
+		.col.group-member
+			.avatar-container
+				img(src=imgsrc alt='Foto do ' + nome)
+			h2= nome
+			p= 'RA ' + ra
+			
 	section#introducao
 		.container
 			header
@@ -12,28 +20,8 @@ block content
 			header
 				h1.title Grupo
 			.grid
-				.col.group-member
-					.avatar-container
-						img(src='assets/img/isaque.jpg', alt='Foto do Isaque')
-					h2 Isaque Ramos da Silva
-					p RA:2279636581
-				.col.group-member
-					.avatar-container
-						img(src='assets/img/bruno.jpg', alt='Foto do Isaque')
-					h2 Bruno Garcia Costa
-					p RA:6037557847
-				.col.group-member
-					.avatar-container
-						img(src='assets/img/isaque.jpg', alt='Foto do Isaque')
-					h2 Wellington Fernandes
-					p RA:1906599362
-				.col.group-member
-					.avatar-container
-						img(src='assets/img/nayanne.jpg', alt='Foto do Isaque')
-					h2 Nayanne Rodrigues
-					p RA:6009367488
-				.col.group-member
-					.avatar-container
-						img(src='assets/img/isaque.jpg', alt='Foto do Isaque')
-					h2 Isaque Ramos da Silva
-					p RA:2279636581
+				+group-member('assets/img/isaque.jpg', 'Isaque Ramos da Silva', '2279636581')
+				+group-member('assets/img/bruno.jpg', 'Bruno Garcia Costa', '6037557847')
+				+group-member('assets/img/nayanne.jpg', 'Nayanne Rodrigues', '6009367488')
+				+group-member('assets/img/bruno.jpg', 'Wellington Fernandes', '1906599362')
+				+group-member('assets/img/bruno.jpg', 'Bruno Garcia Costa', '6037557847')

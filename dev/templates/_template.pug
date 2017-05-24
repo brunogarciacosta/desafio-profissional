@@ -1,3 +1,8 @@
+mixin link-menu(href, titulo)
+	li
+		a(href=href)= titulo 
+
+
 doctype html
 html(lang='en')
 	head
@@ -20,17 +25,16 @@ html(lang='en')
 							h2 Menu
 						nav
 							ul
-								li
-									a(href='') Home
-								li
-									a(href='') Ferramentas para Sistemas Web
-								li
-									a(href='sistemas_operacionais.html') Sistemas Operacionais
-								li
-									a(href='') Organização De Computadores
-								li
-									a(href='') DPP
-								li
-									a(href='') Probabilidade e Estatistica
+								+link-menu('index.html', 'Home')
+								+link-menu('sistemas_web.html', 'Ferramentas para Sistema Web')
+								+link-menu('sistemas_operacionais.html', 'Sistemas Operacionais')
+								+link-menu('org_de_comp.html', 'Organização de Computadores')
+								+link-menu('dpp.html', 'DPP')
+								+link-menu('prob_e_estatistica.html', 'Probabilidade e Estatistica')
+					section
+						header.menu-section-title
+							h2 Tópicos
+						nav
+							block page-navigation
 			main.main
 					block content
