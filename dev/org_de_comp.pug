@@ -1,0 +1,37 @@
+extends templates/_template
+
+block page-navigation
+	ul
+		+link-menu('#conceitos-basicos', 'Conceitos Básicos')
+		+link-menu('#componentes', 'Componentes')
+
+
+block content
+	section#introducao
+		.container
+			header
+				h1.title Organização de Computadores
+	article.main-article
+		.container
+			section#conceitos-basicos
+				h1.title Conceitos Básicos
+				p 
+					| <strong>Computador:</strong> é uma máquina, composta de partes eletrônicas e eletromecânicas, capaz através do sistema de coletar, processar e fornecer os resultados da manipulação de informações para um ou mais objetivos”. <strong>Dados:</strong> uma cadeia de caracteres ou padrões não interpretáveis. <strong>Informação:</strong> é um conjunto de dados considerados significativos e úteis O processamento de dados é composto por três funções básicas: <strong>Entrada:</strong> a reunião e coleta de dados (teclado, mouse, scanner, caneta, microfone, pen-drive, CD, DVD, sensor óptico, sensor magnético entre outros <strong>Processamento:</strong> é a conversão e transformação dos dados de acordo com objetivos.<strong> Saída:</strong> a transferência de informação útil em algum formato pré-definido. ( Monitor, impressora, pen-drive, HD entre outros.)
+				p O computador é composto pelo hardware (parte física como: monitor, o teclado, o mouse, o disco rígido, a memória, a placa mãe, um pen drive) e o Software (parte Lógica: os programas como Word, Excel, Power Point, os navegadores, os jogos, os sistemas operacionais e outros.
+				p Se depender apenas do hardware ou o Software computador não funcionará. Para que um computador funcione adequadamente ele precisa de um conjunto de instruções, programas ou softwares. São essas instruções que permitirão que uma mesma máquina execute diferentes funções, dependendo do programa que estiver sendo usado.
+				p 
+					| Nossas palavras são compostas por combinações de letras, as palavras do computador são compostas por zeros e uns. Algoritmo: Em computação, pode-se dizer que é um procedimento para resolver um problema usando um número finito de instruções e que, frequentemente, envolve a repetição de uma ou mais operações. Bit: corresponde a cada impulso elétrico, positivo ou negativo que são representados por 0 e 1. Byte: é um conjunto de 8 bits. É a menor informação completa que pode ser transmitida ou recebida de um processador num dado tempo. O número de bits varia de acordo com a codificação usada. A máquina de Pascal (1642): era uma calculadora mecânica que realizava operações de soma e subtração. Os usos de cartões perfurados em teares (1804): controlavam as máquinas de tecelagem. Máquina de Leibniz (1670): calculadora mecânica que realizava as quatro operações básicas: soma, subtração, multiplicação e divisão. A máquina analítica de Babbage (1822): era um aparelho que executava operações matemáticas numa sequência especificada. Hollerith (1890): desenvolveu um sistema para codificar dados em cartões perfurados (tabulação estatística). Computadores pessoais (1968): a Intel em conjunto com outra empresa japonesa produziu o primeiro chip, tratava-se do surgimento do primeiro microprocessador que se tornou comercial em 1971.
+			section#componentes
+				h1.title Componentes de um sistema de computação
+				p
+					| Sistema de computação: são um conjunto de componentes que são integrados para funcionar como se fossem um único elemento e que têm por objetivo realizar manipulações com dados, isto é, realizar algum tipo de operação com os dados para obter uma informação útil Instruções de máquina: é quando a máquina precisa identificar cada uma das operações que são solicitadas e também saber como realizá-las. Unidade Central de Processamento (UCP) ou (CPU): e o componente que entende e realiza a operação definida pela instrução de máquina São os milhões de minúsculos circuitos e componentes eletrônicos como transistores e resistores (encapsulados num chip) que permitem que a CPU leia e interprete as instruções de máquina, realizando as operações definidas. Os componentes de armazenamento são: os registradores, memória cache, memória principal e memória secundária.
+					
+				p 
+					|	Dispositivos que são exclusivamente de entrada de dados: O teclado. Dispositivos exclusivos de saída de dados: A impressora. Dispositivos exclusivos de entrada e saída de dados: O pen-drive. Os dispositivos de entrada e saída permitem que o sistema de computação se comunique com o mundo exterior e que executam as transformações entre a linguagem do usuário e a linguagem de máquina. Barramento: é o nome dado ao conjunto de fios que conduzem os sinais elétricos entre os diversos componentes do computador), O barramento é único, mas dividido em três conjuntos de fios com funcionalidades diferentes, dentro do mesmo processo de transferência: O conjunto BC (Barramento de Controle): serve para a função de transportar sinais de controle e comunicação. O conjunto BE (Barramento de Endereços): serve para transportar sinais (bits) que representam um número que é o endereço de um local de memória ou o indicativo de um dispositivo de E/S. O conjunto BD (Barramento de Dados): serve para transportar os sinais elétricos correspondentes aos bits dos dados. Código de representação de caracteres: é a codificação usada pelo sistema de computação ASCII (American Standard Code for Information Interchange): o byte inicialmente era um conjunto de 7 bits. Atualmente usa um conjunto de 8 bytes. EBCDIC (Extended, Binary Code with Decimal Interchanged Code): o byte é um conjunto de 8 bits. Inicialmente também era de 7 bits. Não é possível usar dois códigos de representação de caracteres distintos na mesma máquina porque um mesmo símbolo teria duas representações possíveis deixaria o sistema invalido. Palavra: num sistema de computação significa um conjunto de bytes. O número de bits que uma palavra pode armazenar depende do sistema ou da máquina. A palavra define a quantidade de bits que o computador pode manusear de uma só vez. Arquivo: é um conjunto formado por dados (ou informações) de um mesmo tipo ou para uma mesma aplicação, sendo constituídos por itens individuais de informação chamados registros Sistema computacional: consiste num conjunto de dispositivos eletrônicos (hardware) capazes de processar informações de acordo com um programa (software). Todo computador possui um conjunto de instruções que seu processador é capaz de executar. Essas instruções são chamadas código de máquina. Arquivo: é um recurso para armazenamento de informação, que está disponível a um programa de computador e é normalmente baseado em algum tipo de armazenamento durável. Código de representação de caracteres: é um esquema de codificação em que, por convenção, certos conjuntos de bits representam determinados caracteres.
+
+					
+						
+					
+			
+		
+  

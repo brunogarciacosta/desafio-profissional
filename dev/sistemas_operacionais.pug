@@ -2,9 +2,11 @@ extends templates/_template
 
 block page-navigation
 	ul
-		+link-menu('org_de_comp.html', 'Organização de Computadores')
-		+link-menu('org_de_comp.html', 'Organização de Computadores')
-		+link-menu('org_de_comp.html', 'Organização de Computadores')
+		+link-menu('#conceitos-basicos', 'Conceitos Básicos')
+		+link-menu('#tipos-de-sistema', 'Tipos de Sistema ')
+		+link-menu('#gerencia-do-processador', 'Gerencia do Processador')
+		+link-menu('#sistema-de-arquivos', 'Sistema de Arquivos')
+		+link-menu('#gerencia-de-memoria', 'Gerencia de memória')
 
 block content
 	section#introducao
@@ -60,7 +62,29 @@ block content
 							p <strong>Gerenciamento de arquivos:</strong> mecanismos e método de armazenamento, compartilhamento e segurança. 
 						li
 							p <strong>Mecanismos de integridade: </strong>processos que asseguraram que os dados de um arquivo estão íntegros.
-
+				p  
+					| Um sistema operacional pode operar com diversos sistemas de arquivos, isto quer dizer que podemos ter diversas formas de gestão de arquivos dentro do mesmo sistema operacional. Isso se deve ao fato de que temos atualmente a conexão de vários computadores por redes; logo, isso gera a necessidade de manipular arquivos em diferentes sistemas de arquivos. 
+					A estrutura de diretórios é o modo como o sistema se estrutura logicamente para armazenar os diversos arquivos contidos na memória secundária (disco, pendrive etc). O diretório é uma estrutura de dados que contém endereços que apontam aos arquivos onde são armazenadas informações como localização física, nome, organização e demais atributos. Quando o usuário solicita a abertura de um arquivo, o Sistema Operacional procura sua referência na estrutura de diretórios, armazenando as informações sobre atributos e a localização do arquivo em uma tabela mantida na memória principal. Essa tabela é conhecida como tabela de alocação de arquivos.
+			section#gerencia-de-memoria
+				h2.title Gerência de Memória e Dispositivos de E/S
+				p
+					| Memória é um importante recurso que deve ser gerenciado cuidadosamente. É senso comum perceber que, embora a capacidade de memória disponível nos sistemas de computação cada vez aumente mais, os desenvolvedores de software demandam mais memória para que seus programas possam ser armazenados e executados. Gerenciamento de memória é a tarefa desempenhada pela parte do SO que controla o uso da memória. É função dessa parte do SO conhecer quais regiões da memória estão em uso e quais não estão sendo usadas, alocar memória para processos quando eles necessitarem e desalocá-la quando os processos terminarem de ser executados, gerenciar o swapping entre a memória principal e o disco, quando a memória principal não for grande o suficiente para comportar todos os processos.
+				p
+					| Em um sistema de computação, o armazenamento de dados ocorre em diversos níveis. Isso quer dizer que o armazenamento é realizado em diferentes tipos de dispositivos devido a quatro fatores básicos (MACHADO; MAIA, 2013): 
+					ol
+						li
+							Tempo de acesso.
+						li
+							Velocidade de operação. 
+						li
+							Custo por unidade de armazenamento.
+						li
+							Capacidade de armazenamento.
+				p
+					| Com isso, o projetista de um sistema operacional determina quanto de cada tipo de memória será necessário para que o sistema seja, ao mesmo tempo, eficiente e economicamente viável. Em virtude das dificuldades tecnológicas associadas à construção de circuitos de memória e seu custo, o armazenamento de dados assumiu historicamente a organização.			
+						
+					 
+				
 					
 						
 					

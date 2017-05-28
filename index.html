@@ -2,7 +2,9 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" type="text/css" href="assets/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/11.1.0/js/smooth-scroll.min.js"></script>
+    <script src="assets/index.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -15,28 +17,30 @@
           <header>
             <h1 class="logo-navbar">DESAFIO<span>PROFISSIONAL</span></h1>
           </header>
-          <section class="main-menu">
-            <header class="menu-section-title">
-              <h2>Menu</h2>
-            </header>
-            <nav>
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sistemas_web.html">Ferramentas para Sistema Web</a></li>
-                <li><a href="sistemas_operacionais.html">Sistemas Operacionais</a></li>
-                <li><a href="org_de_comp.html">Organização de Computadores</a></li>
-                <li><a href="dpp.html">DPP</a></li>
-                <li><a href="prob_e_estatistica.html">Probabilidade e Estatistica</a></li>
-              </ul>
-            </nav>
-          </section>
-          <section>
-            <header class="menu-section-title">
-              <h2>Tópicos</h2>
-            </header>
-            <nav>
-            </nav>
-          </section>
+          <div id="menu-sections-wrapper">
+            <section class="main-menu">
+              <header class="menu-section-title">
+                <h2>Menu</h2>
+              </header>
+              <nav>
+                <ul>
+                  <li><a data-scroll="data-scroll" href="index.html">Home</a></li>
+                  <li><a data-scroll="data-scroll" href="sistemas_web.html">Ferramentas para Sistema Web</a></li>
+                  <li><a data-scroll="data-scroll" href="sistemas_operacionais.html">Sistemas Operacionais</a></li>
+                  <li><a data-scroll="data-scroll" href="org_de_comp.html">Organização de Computadores</a></li>
+                  <li><a data-scroll="data-scroll" href="dpp.html">DPP</a></li>
+                  <li><a data-scroll="data-scroll" href="prob_e_estatistica.html">Probabilidade e Estatistica</a></li>
+                </ul>
+              </nav>
+            </section>
+            <section>
+              <header class="menu-section-title">
+                <h2>Tópicos</h2>
+              </header>
+              <nav>
+              </nav>
+            </section>
+          </div>
         </div>
       </aside>
       <main class="main">
@@ -76,9 +80,9 @@
                         <p>RA 1906599362</p>
                       </div>
                       <div class="col group-member">
-                        <div class="avatar-container"><img src="assets/img/bruno.jpg" alt="Foto do Bruno Garcia Costa"></div>
-                        <h2>Bruno Garcia Costa</h2>
-                        <p>RA 6037557847</p>
+                        <div class="avatar-container"><img src="assets/img/allan.jpg" alt="Foto do Alan Soares de Carvalho"></div>
+                        <h2>Alan Soares de Carvalho</h2>
+                        <p>RA 6036567960</p>
                       </div>
             </div>
           </div>
@@ -86,4 +90,7 @@
       </main>
     </div>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/11.1.0/js/smooth-scroll.min.js"></script>
+  <script src="assets/index.js"></script>
+  <script>smoothScroll.init();</script>
 </html>

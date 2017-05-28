@@ -1,13 +1,16 @@
 mixin link-menu(href, titulo)
 	li
-		a(href=href)= titulo 
+		a(data-scroll href=href)= titulo 
 
 
 doctype html
 html(lang='en')
 	head
+		
 		link(rel='stylesheet', type='text/css', href='assets/style.css')
-		link(href='https://fonts.googleapis.com/css?family=Oswald:300,400', rel='stylesheet')
+		link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/11.1.0/js/smooth-scroll.min.js')
+		script(src='assets/index.js')
 		meta(charset='UTF-8')
 		meta(name='viewport', content='width=device-width, initial-scale=1.0')
 		meta(http-equiv='X-UA-Compatible', content='ie=edge')
@@ -20,21 +23,26 @@ html(lang='en')
 						h1.logo-navbar
 							| DESAFIO
 							span PROFISSIONAL
-					section.main-menu
-						header.menu-section-title
-							h2 Menu
-						nav
-							ul
-								+link-menu('index.html', 'Home')
-								+link-menu('sistemas_web.html', 'Ferramentas para Sistema Web')
-								+link-menu('sistemas_operacionais.html', 'Sistemas Operacionais')
-								+link-menu('org_de_comp.html', 'Organização de Computadores')
-								+link-menu('dpp.html', 'DPP')
-								+link-menu('prob_e_estatistica.html', 'Probabilidade e Estatistica')
-					section
-						header.menu-section-title
-							h2 Tópicos
-						nav
-							block page-navigation
+					#menu-sections-wrapper
+						section.main-menu
+							header.menu-section-title
+								h2 Menu
+							nav
+								ul
+									+link-menu('index.html', 'Home')
+									+link-menu('sistemas_web.html', 'Ferramentas para Sistema Web')
+									+link-menu('sistemas_operacionais.html', 'Sistemas Operacionais')
+									+link-menu('org_de_comp.html', 'Organização de Computadores')
+									+link-menu('dpp.html', 'DPP')
+									+link-menu('prob_e_estatistica.html', 'Probabilidade e Estatistica')
+						section
+							header.menu-section-title
+								h2 Tópicos
+							nav
+								block page-navigation
 			main.main
 					block content
+	script(src='https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/11.1.0/js/smooth-scroll.min.js')
+	script(src='assets/index.js')
+	script.
+		smoothScroll.init();
