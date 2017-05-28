@@ -4,9 +4,9 @@ block content
 	mixin group-member(imgsrc, nome, ra)
 		.col.group-member
 			.avatar-container
-				img(src=imgsrc alt='Foto do ' + nome)
+				img(src=imgsrc alt='Foto de ' + nome)
 			h2= nome
-			p= 'RA ' + ra
+			p= 'RA: ' + ra
 			
 	section#introducao
 		.container
@@ -14,7 +14,7 @@ block content
 				h1.title Desafio Profissional
 				h2.subtitle Tecnologia em Análise e Desenvolvimento de Sistemas
 			p.text-justify
-				| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quod, fugit, minima molestias voluptate, ratione accusantium cumque eaque et fugiat atque impedit neque laudantium eligendi facere molestiae, totam est quasi officia a quaerat quidem commodi deserunt! Ut, nostrum. Deserunt quam atque ratione debitis magnam repellendus, minima impedit accusantium repudiandae non repellat molestiae pariatur, cupiditate! Perspiciatis nihil non optio numquam qui adipisci dolorum laboriosam, eos, obcaecati voluptatem provident vitae earum accusamus ex architecto perferendis saepe eius facilis, voluptate repellendus rerum magnam. Officiis similique nam excepturi beatae ex expedita, ullam accusamus qui mollitia? Deleniti vero inventore saepe quaerat, sit quod vitae accusantium suscipit! Distinctio laboriosam odio id aperiam numquam, ab eos nobis!
+				| Desenvolvimento de site
 	section#grupo
 		.container
 			header
@@ -23,5 +23,5 @@ block content
 				+group-member('assets/img/isaque.jpg', 'Isaque Ramos da Silva', '2279636581')
 				+group-member('assets/img/bruno.jpg', 'Bruno Garcia Costa', '6037557847')
 				+group-member('assets/img/nayanne.jpg', 'Nayanne Rodrigues', '6009367488')
-				+group-member('assets/img/bruno.jpg', 'Wellington Fernandes', '1906599362')
+				+group-member('assets/img/noavatar.gif', 'Wellington Fernandes', '1906599362')
 				+group-member('assets/img/allan.jpg', 'Alan Soares de Carvalho', '6036567960')

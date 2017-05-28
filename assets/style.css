@@ -69,11 +69,8 @@ strong {
 
 #introducao {
   background-attachment: fixed,  fixed,  fixed;
-  background-image: url(img/granulado.png), url(img/fundo.svg), -webkit-linear-gradient(bottom left, #2f2c2f, #1a181b);
-  background-image: url(img/granulado.png), url(img/fundo.svg), -o-linear-gradient(bottom left, #2f2c2f, #1a181b);
-  background-image: url(img/granulado.png), url(img/fundo.svg), linear-gradient(to top right, #2f2c2f, #1a181b);
+  background-image: url(img/granulado.png), url(img/fundo.jpg);
   background-position: top left,	center center,	center center;
-  background-size: auto,	cover,	cover;
   overflow: hidden;
   color: #ededed; }
 
